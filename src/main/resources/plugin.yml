@@ -6,3 +6,6 @@ commands:
   meow:
     description: Meow like a cat person.
     usage: /meow <args>
+  meowy:
+    description: Tells you about Meowy.
+    usage: /meowy

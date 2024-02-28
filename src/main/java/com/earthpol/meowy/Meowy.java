@@ -10,6 +10,7 @@ public final class Meowy extends JavaPlugin {
     public void onEnable() {
         Objects.requireNonNull(this.getCommand("meow")).setExecutor(new MeowCommand());
         Objects.requireNonNull(this.getCommand("meow")).setTabCompleter(new MeowTabCompleter());
+        Objects.requireNonNull(this.getCommand("meowy")).setExecutor(new MeowyCommand());
     }
 
     @Override
