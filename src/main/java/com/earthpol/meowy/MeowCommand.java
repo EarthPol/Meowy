@@ -39,7 +39,7 @@ public class MeowCommand implements CommandExecutor {
         cooldowns.put(playerID, timeNow);
 
         Sound sound = Sound.ENTITY_CAT_AMBIENT; // Default sound
-        String action = "meowed."; // Default action
+        String action = "meowed"; // Default action
 
         if (args.length > 0) {
             switch (args[0].toLowerCase()) {
@@ -48,26 +48,26 @@ public class MeowCommand implements CommandExecutor {
                     break;
                 case "beg":
                     sound = Sound.ENTITY_CAT_BEG_FOR_FOOD;
-                    action = "begged for food.";
+                    action = "begged for food";
                     break;
                 case "hiss":
                     sound = Sound.ENTITY_CAT_HISS;
-                    action = "hissed.";
+                    action = "hissed";
                     break;
                 case "hurt":
                     sound = Sound.ENTITY_CAT_HURT;
-                    action = "sounded hurt.";
+                    action = "sounded hurt";
                     break;
                 case "purr":
                     sound = Sound.ENTITY_CAT_PURR;
-                    action = "purred.";
+                    action = "purred";
                     break;
                 case "purreow":
                     sound = Sound.ENTITY_CAT_PURREOW;
-                    action = "made a purreow sound.";
+                    action = "made a purreow sound";
                     break;
                 default:
-                    player.sendMessage("Unknown sound. Playing default meow.");
+                    player.sendMessage("Unknown sound. Playing default meow");
             }
         }
 
